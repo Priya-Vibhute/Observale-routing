@@ -5,12 +5,15 @@ import { ProductComponent } from './product/product.component';
 
 export const routes: Routes = [
     {
-        path:"",component:ContactComponent
+        path:"",component:ContactComponent,title:"home"
     }
     ,{
-        path:"user",component:UserComponent
+        path:"user",component:UserComponent,title:"user"
     },
     {
-        path:"product",component:ProductComponent
-    }
+        path:"product",component:ProductComponent,title:"product"
+    },
+    {
+        path:"user/:id",component:ContactComponent,title:"user"
+    },
 ];
